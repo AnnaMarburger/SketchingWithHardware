@@ -1,0 +1,4 @@
+baseURL = 'https://annamarburger.github.io/swh/'
+languageCode = 'en-us'
+title = 'Sketching with Hardware I+II'
+theme = 'ananke'
