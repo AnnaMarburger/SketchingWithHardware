@@ -10,15 +10,15 @@ Nach einer einführenden Vorlesung zu Elektrotechnik, in der unser Wissen zu Str
 
 In Zweierteams wurden uns Lötkolben, Lötzinn, Entlötlitze und Flussmittel bereitgestellt, sowie eine Leiterplatte und verschiedene Widerstände. 
 
-{{< figure src="../media/lab1_loeten_zubehoer.png" caption="Lötzubehör" width="60%" height="60%">}}
+{{< figure src="../media/lab1_loeten_zubehoer.png"  width="60%" height="60%">}}
 
 Letzere sollten also auf der Platte festgelötet werden. Zunächst musste dafür das Flussmittel auf die zu lötende Stelle aufgetragen werden. Anschließend wurde die Stelle mit dem Lötkolben erhitzt und der Lötzinn daran gehalten, bis dieser flüssig wurde. Nach dem Erhärten war die Stelle auch schon erfolgreich verlötet.
 
-{{< figure src="../media/lab1_loeten_vorgang.png" caption="Prozess"  width="60%" height="60%">}}
+{{< figure src="../media/lab1_loeten_vorgang.png"  width="60%" height="60%">}}
 
 Da ich bisher noch keine Erfahrungen mit Löten sammeln konnte, war der Start zunächst holprig - nach zwei, drei Mal löten klappte es jedoch bereits gut.
 
-{{< figure src="../media/lab1_loeten_ergebnis.png" caption="Ergebnis" width="60%" height="60%">}}
+{{< figure src="../media/lab1_loeten_ergebnis.png"  width="60%" height="60%">}}
 
 
 ### Versuch 2: Messgeräte im Labor
@@ -53,7 +53,7 @@ Der letzte Versuch bildete das Messen eines Widerstands mit einem Spannungsteile
 
 Vorgehen: Zunächst musste dafür ein Spannungsteiler gebaut werden, dies realisierten wir mit Hilfe einer Steckplatte.
 
-{{< figure src="../media/lab1_stromteiler_aufbau.png" caption="Spannungsteiler Versuchsaufbau"  width="60%" height="60%">}}
+{{< figure src="../media/lab1_stromteiler_aufbau.png" width="60%" height="60%">}}
 
 Anschließend nahmen wir die Werte der Spannung des zweiten Widerstandes ($U_{R_2}$) bzw. der gesamten Spannung ($U_{ges}$). Zudem maßen wir den Wert des zweiten Widerstandes ($R_2$). Durch Umstellen der Formel
 
@@ -70,7 +70,16 @@ $$R_1=\frac{2V*221\Omega}{0,63V}+221\Omega= \frac{58123}{63} \Omega$$
 für den ersten Widerstand $R_1$.
 Vorteil der Berechnung des Widerstandes durch diese Formel ist klar, dass keine Stromwerte gemessen werden müssen.
 
-### Projektentscheidung: Wetterstation
+### Projektentscheidung: GameStation
+
+Als Projekt für das erste Semesteron Sketching with Hardware entscheide ich mich für die RetroPie GameStation.
+
+{{< figure src="../media/gamestation_skizze.png" caption=""  width="65%" height="65%">}}
+
+Dafür habe ich folgenden Steckplan mit Hilfe der Fritzingsoftware gebaut:
+
+{{< figure src="../media/gamestation_loetplan.png" caption=""  width="65%" height="65%">}}
+
 
 
 
