@@ -6,7 +6,7 @@ draft: false
 
 Nach einer einführenden Vorlesung zu Elektrotechnik, in der unser Wissen zu Strom, Spannung und Widerstand aufgefrischt wurde, bildete der erste Versuch des heutigen Labs das Löten.
 
-## Versuch 1: Löten
+### Versuch 1: Löten
 
 In Zweierteams wurden uns Lötkolben, Lötzinn, Entlötlitze und Flussmittel bereitgestellt, sowie eine Leiterplatte und verschiedene Widerstände. 
 
@@ -21,13 +21,13 @@ Da ich bisher noch keine Erfahrungen mit Löten sammeln konnte, war der Start zu
 {{< figure src="../media/lab1_loeten_ergebnis.png" caption="Ergebnis" width="60%" height="60%">}}
 
 
-## Versuch 2: Messgeräte im Labor
+### Versuch 2: Messgeräte im Labor
 
-### 2.1 Einführende Aufgaben
+#### 2.1 Einführende Aufgaben
 
 Um das Wissen aus der vorangegangenen Vorlesung zu festigen und auf den folgenden Versuch zu Messgeräten im Labor vorzubereiten, beschäftigten wir uns als nächstes mit ein paar Aufgaben zum Ohmschen Gesetz, Kennlinien und zur Leistung. So sollten wir Widerstände berechnen, von Kennlinien ablesen und Zusammenhänge zwischen Strom- und Widerstandgrößen bzw der Leistungsabgabe verstehen.
 
-### 2.2 Messen mit dem Multimeter
+#### 2.2 Messen mit dem Multimeter
 
 Vorbereitung: Anschließen eines Widerstandes an das Labornetzteil nach folgendem Schema:
 
@@ -47,7 +47,7 @@ Bei die Berechnung des Widerstands fallen die Messungenauigkeiten und -fehler de
 
 In der Schule behandelte der Physikunterricht das Messen mit dem Multimeter, so war dies für mich zwar nicht neu; Da die letzte Physikstunde jedoch schon eine ganze Weile her ist, frischte dieser Versuch mein Wissen dazu deutlich auf.
 
-### 2.3 Widerstand mit dem Spannungsteiler bestimmen
+#### 2.3 Widerstand mit dem Spannungsteiler bestimmen
 
 Der letzte Versuch bildete das Messen eines Widerstands mit einem Spannungsteiler.
 
@@ -70,7 +70,7 @@ $$R_1=\frac{2V*221\Omega}{0,63V}+221\Omega= \frac{58123}{63} \Omega$$
 für den ersten Widerstand $R_1$.
 Vorteil der Berechnung des Widerstandes durch diese Formel ist klar, dass keine Stromwerte gemessen werden müssen.
 
-## Projektentscheidung: Wetterstation
+### Projektentscheidung: Wetterstation
 
 
 
