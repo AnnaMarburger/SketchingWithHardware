@@ -59,7 +59,7 @@ Anschließend nahmen wir die Werte der Spannung des zweiten Widerstandes ($U_{R_
 
 $$U_{R_2}=U_{ges}*\frac{R_2}{R_1+R_2}$$  
 
-aus der Vorlesung nach  ${R_1}$ :
+aus der Vorlesung nach  $R_1$ :
 
 $$R_1=\frac{U_{ges}*R_2}{U_{R_2}}+R_2$$
 
