@@ -1,4 +1,19 @@
 baseURL = 'https://annamarburger.github.io/swh/'
 languageCode = 'en-us'
-title = 'Sketching with Hardware I+II'
-theme = 'ananke'
+title = 'Sketching with Hardware I + II'
+theme = "hugo-theme-monochrome"
+
+[params]
+author = "Anna Marburger"
+footer = "© Anna's Sketching with Hardware, WS 2022/23" # default: None
+enable_toc = true
+enable_collapsible_toc = true
+enable_math = true
+enable_site_search = true
+[param.syntax_highlight]
+  lib = "builtin" # "builtin" | "prism.js" (default: "builtin")
+    [param.syntax_highlight.builtin]
+    enable_code_copy = true # default: true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
