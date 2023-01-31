@@ -7,7 +7,7 @@ draft: false
 Es fanden drei Microcontroller Labortage statt, von denen ich an einem aufgrund von Krankheit nicht teilnehmen konnte.
 
 ### Tag 1
-Am ersten Tag erhielten wir zunächst eine Kiste mit verschiedenen Bauteilen. In der Runde besprachen wir verschiedene Sensoren, wie zum Beispiel für Luftfeuchtigket oder Temperatur. 
+Am ersten Tag erhielten wir zunächst eine Kiste mit verschiedenen Bauteilen. In der Runde besprachen wir verschiedene Sensoren, wie zum Beispiel für Luftfeuchtigkeit oder Temperatur. 
 Anschließend programmierten wir unseren ersten Arduino mit dem Beispielprogramm "Blink" der Arduino IDE. 
 
 Nachdem die eingebaute Mini-LED im Arduino erfolgreich blinkte, schlossen wir mit Hilfe einer Steckplatine externe LED's an und passten auch dementsprechend das Skript für den Arduino an. 
