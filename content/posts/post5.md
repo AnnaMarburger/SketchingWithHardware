@@ -1,7 +1,7 @@
 ---
 title: "05 - Subtraktive Fertigung"
 date: 2023-01-23T13:51:30+01:00
-draft: true
+draft: false
 ---
 
 ### Eigenschaften und Materialien
