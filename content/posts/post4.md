@@ -6,7 +6,7 @@ featured_image: "/media/mech_titel.jpeg"
 draft: false
 ---
 
-Im heutigen Labor ging es um Mechanik. In der Vorlesung wurden die verschiedene grundlegenenden Ideen von Maschinen erklärt: Energie umwandeln oder übertragen, Kraft verfielfachen oder umlenken und Geschwindigkeit erhöhen. Die daraus entstandenen mechanischen Prinzipien beruhen auf:
+Im heutigen Labor ging es um Mechanik. In der Vorlesung wurden die verschiedenen grundlegenden Ideen von Maschinen erklärt: Energie umwandeln oder übertragen, Kraft vervielfachen oder umlenken und Geschwindigkeit erhöhen. Die daraus entstandenen mechanischen Prinzipien beruhen auf:
 - Hebel
 - Flaschenzüge
 - Rad + Achse
