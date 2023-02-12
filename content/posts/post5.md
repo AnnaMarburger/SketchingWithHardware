@@ -1,8 +1,9 @@
 ---
 title: "05 - Subtraktive Fertigung"
 date: 2023-01-23T13:51:30+01:00
-featured_image: "/content/posts/media/lab3_bojackergebnis.jpeg"
+featured_image: "media/lab3_bojackergebnis.jpeg"
 draft: false
+show_reading_time: true
 ---
 
 ### Eigenschaften und Materialien

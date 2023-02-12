@@ -1,6 +1,7 @@
 ---
 title: "01 -  Vorstellung"
 date: 2022-11-03T13:58:40+01:00
+show_reading_time: true
 draft: false
 ---
 

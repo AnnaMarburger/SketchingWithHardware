@@ -1,6 +1,8 @@
 ---
 title: "02 -  E-Technik Labor"
 date: 2022-11-11T18:15:06+01:00
+featured_image: "media/lab1_loeten_vorgang.png"
+show_reading_time: true
 draft: false
 ---
 
@@ -55,20 +57,8 @@ Vorgehen: Zunächst musste dafür ein Spannungsteiler gebaut werden, dies realis
 
 {{< figure src="../media/lab1_stromteiler_aufbau.png" width="60%" height="60%">}}
 
-Anschließend nahmen wir die Werte der Spannung des zweiten Widerstandes ($U_{R_2}$) bzw. der gesamten Spannung ($U_{ges}$). Zudem maßen wir den Wert des zweiten Widerstandes ($R_2$). Durch Umstellen der Formel
-
-$$U_{R_2}=U_{ges}*\frac{R_2}{R_1+R_2}$$  
-
-aus der Vorlesung nach  $R_1$ :
-
-$$R_1=\frac{U_{ges}*R_2}{U_{R_2}}+R_2$$
-
-Ergebnis: Mit den Messwerten eingesetzt, ergab dies
-
-$$R_1=\frac{2V*221\Omega}{0,63V}+221\Omega= \frac{58123}{63} \Omega$$
-
-für den ersten Widerstand $R_1$.
-Vorteil der Berechnung des Widerstandes durch diese Formel ist klar, dass keine Stromwerte gemessen werden müssen.
+Anschließend nahmen wir die Werte der Spannung des zweiten Widerstandes bzw. der gesamten Spannung. Zudem maßen wir den Wert des zweiten Widerstandes. 
+Vorteil der Berechnung des Widerstandes durch die Formel aus der Vorlesung ist klar, dass keine Stromwerte gemessen werden müssen.
 
 ### Projektentscheidung: GameStation
 

@@ -1,6 +1,8 @@
 ---
 title: "03 - Microcontroller Labor"
 date: 2022-12-04T18:42:03+01:00
+featured_image: "/media/lab2_ledmatrix.jpeg"
+show_reading_time: true
 draft: false
 ---
 
