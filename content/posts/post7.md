@@ -2,7 +2,7 @@
 title: "07 - Abschlusspost"
 date: 2023-03-01T22:08:49+01:00
 show_reading_time: true
-featured_image: "/media/lab4_qboydruck.jpeg"
+featured_image: "/media/qboy3.jpeg"
 draft: false
 ---
 
