@@ -22,24 +22,24 @@ Als erstes bekamen wir die Aufgabe, ein einfaches Getriebe zu bauen:
 
 {{< figure src="../media/mech_getriebe.jpeg"  width="60%" height="60%">}}
 
-{{< figure src="../media/mech_getriebe.mov"  width="60%" height="60%">}}
+{{< figure src="../media/mech_getriebe.mp4"  width="60%" height="60%">}}
 
 
 Außerdem bauten wir ein 3-Gang-Schaltgetriebe:
 
 {{< figure src="../media/mech_3gang_1.jpeg"  width="60%" height="60%">}}
 
-{{< figure src="../media/mech_3gang_2.mov"  width="60%" height="60%">}}
+{{< figure src="../media/mech_3gang_2.mp4"  width="60%" height="60%">}}
 
 Hier bereitete das exakte Einstellen der Zahnräder, so dass diese passgenau ineinander greifen, zunächst Schwierigkeiten. Am Ende ließ sich das Getriebe jedoch nahezu mühelos umschalten.
 
 Zusätzlich steckten wir einen Scherenhub:
 
-{{< figure src="../media/mech_hebeplatte.mov"  width="60%" height="60%">}}
+{{< figure src="../media/mech_hebeplatte.mp4"  width="60%" height="60%">}}
 
 Sowie zum Schluss das sogenannte Planetengetriebe (Umlaufrädergetriebe):
 
-{{< figure src="../media/mech_planetengetriebe.mov"  width="60%" height="60%">}}
+{{< figure src="../media/mech_planetengetriebe.mp4"  width="60%" height="60%">}}
 
 
 
