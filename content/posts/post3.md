@@ -14,7 +14,7 @@ Anschließend programmierten wir unseren ersten Arduino mit dem Beispielprogramm
 
 Nachdem die eingebaute Mini-LED im Arduino erfolgreich blinkte, schlossen wir mit Hilfe einer Steckplatine externe LED's an und passten auch dementsprechend das Skript für den Arduino an. 
 
-{{< figure src="../media/lab2_ledblinken.mp4"  width="60%" height="60%">}}
+{{< figure src="../media/lab2_ledblinken.gif"  width="60%" height="60%">}}
 
 Anschließend durften wir mit den verschiedenen Sensoren herumbasteln. 
 Mit einem Touchsensor probierte ich, eine LED durch diesen zum Leuchten zu bringen, bzw. wieder auszuschalten. Leider reagierte der Sensor nicht besonders gut und wurde deshalb schnell durch einen normalen Button ersetzt. Danach funktionierte das Skript einwandfrei.
