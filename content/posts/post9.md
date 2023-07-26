@@ -32,7 +32,8 @@ Bird Booth soll ein langlebiges und umweltfreundliches Vogelhäuschen sein.
 - 2 kleine Plexiglasplatten
 - 2 kleine Magnete
 - 2x Schrauben (Maße: Durchmesser  5mm, Kopfdurchmesser max. 9mm, Länge ca 25mm), einschließlich 2 passenden Muttern
-- 2x Schrauben (Maße: Durchmesser 5mm, Kopfdurchmesser max. 9mm, Länge ca 25mm), einschließlich 2 passenden Muttern
+- Eine Schraube (Maße: Durchmesser 5mm, Kopfdurchmesser max. 9mm, Länge 15-25mm), einschließlich passender Muttern (Für Sensor-Case unten)
+- Eine Schrauben (Maße: Durchmesser 4mm, Kopfhöhe max. 4.5mm, Länge 15-25mm), einschließlich passender Muttern
 - 8 kleine Nägel
 - Holzstab Durchmesser 10mm, Länge 105mm
 

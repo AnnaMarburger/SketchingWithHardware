@@ -93,7 +93,14 @@ Alle Features waren zum Zeitpunkt der Abschlusspräsentation bereits geplant und
         Your browser does not support the video tag.  
     </video>
 {{< /rawhtml >}}
-
+  \
+  \
+{{< rawhtml >}} 
+    <video width=80% controls autoplay>
+        <source src="../media/projekt/haus_zugänglichkeit.mp4" type="video/mp4">
+        Your browser does not support the video tag.  
+    </video>
+{{< /rawhtml >}}
   \
   \
 {{< figure src="../media/projekt/fertigeshaus.jpg" caption="Fertiges Häuschen von Vorne">}}
