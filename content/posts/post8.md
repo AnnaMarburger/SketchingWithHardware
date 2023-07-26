@@ -59,6 +59,8 @@ Für zukünftige Kurse würde ich mir neue 3D-Drucker wünschen, um die Arbeit z
     <br>
 {{< /rawhtml >}}
 ## Das Projekt: Bird Booth
+{{< figure src="../media/projekt/Poster_AnnaMarburger.pdf" caption="Poster für das Streiflicht 2023 ">}}
+
 
 Bird Booth sollte ein smartes Futterhäuschen werden mit der Funktion, Bilder zu machen, wenn ein Vogel an die Futterstelle kommt und diesen zu wiegen, um anschließend die Daten an einen Webserver zu senden. Das Futterhäuschen sollte sicher für Vögel, wetterbeständig und robust werden.
 
@@ -88,7 +90,7 @@ Alle Features waren zum Zeitpunkt der Abschlusspräsentation bereits geplant und
   \
   \
 {{< rawhtml >}} 
-    <video width=80% controls autoplay>
+    <video width=80% controls autplay >
         <source src="../media/projekt/haus.mp4" type="video/mp4">
         Your browser does not support the video tag.  
     </video>
@@ -96,8 +98,8 @@ Alle Features waren zum Zeitpunkt der Abschlusspräsentation bereits geplant und
   \
   \
 {{< rawhtml >}} 
-    <video width=80% controls autoplay>
-        <source src="../media/projekt/haus_zugänglichkeit.mp4" type="video/mp4">
+    <video width=80% controls autplay >
+        <source src="../media/projekt/haus_zugaenglichkeit.mp4" type="video/mp4">
         Your browser does not support the video tag.  
     </video>
 {{< /rawhtml >}}
