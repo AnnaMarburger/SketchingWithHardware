@@ -15,3 +15,4 @@ In meinem Studium hatte ich bisher lediglich die Möglichkeit, meine Fähigkeite
 ### Alle Fähigkeiten - welches Projekt?
 
 Um den schweren Alltag als Studentin besser tragen zu können, wäre meine erste Projektwahl, wenn ich alle nötigen Fähigkeiten hätte, wohl der Bau eines Kaffeevollautomaten. Einen solchen in der Küche stehen zu haben, wer träumt nicht davon? Jedoch das Geld dafür hinzublättern fällt direkt schwerer. Der Kompromiss: Selber bauen und dabei hoffentlich einiges einsparen.
+ 
