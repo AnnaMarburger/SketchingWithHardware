@@ -59,14 +59,14 @@ Bird Booth soll ein langlebiges und umweltfreundliches Vogelhäuschen sein.
 ### Dateien-Bibliothek
 #### Server
 - [Server Code ](https://github.com/AnnaMarburger/smartesfutterhaus)
-- [ESP Code ]()
+- [ESP Code ](https://github.com/AnnaMarburger/swh/blob/main/birdbooth_files/esp_code.ino)
 
 #### 3D-Druck-Modelle (.stl)
-- [Sensor-Case Deckel ]()
-- [Sensor-Case Zwischenblatt]()
-- [Sensor-Case Unterteil]()
-- [Futterschale Unterteil]()
-- [Kamera-Case]()
+- [Sensor-Case Deckel ](https://github.com/AnnaMarburger/swh/blob/main/birdbooth_files/sensorcase_deckel.stl)
+- [Sensor-Case Zwischenblatt](https://github.com/AnnaMarburger/swh/blob/main/birdbooth_files/sensorcase_zwischenblatt.stl)
+- [Sensor-Case Unterteil](https://github.com/AnnaMarburger/swh/blob/main/birdbooth_files/sensorcase_unten.stl)
+- [Futterschale Unterteil](https://github.com/AnnaMarburger/swh/blob/main/birdbooth_files/futterschale_unten.stl)
+- [Kamera-Case](https://github.com/AnnaMarburger/swh/blob/main/birdbooth_files/cam-case.stl)
 
 
 {{< rawhtml >}} 
