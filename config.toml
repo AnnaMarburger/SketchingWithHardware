@@ -1,6 +1,6 @@
 baseURL = 'https://annamarburger.github.io/swh/'
 languageCode = 'en-us'
-title = 'Sketching with Hardware I + II'
+title = 'Anna Marburger'
 theme = "ananke"
 
 [params]

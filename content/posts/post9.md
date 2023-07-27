@@ -32,8 +32,8 @@ Bird Booth soll ein langlebiges und umweltfreundliches Vogelhäuschen sein.
 - 2 kleine Plexiglasplatten
 - 2 kleine Magnete
 - 2x Schrauben (Maße: Durchmesser  5mm, Kopfdurchmesser max. 9mm, Länge ca 25mm), einschließlich 2 passenden Muttern
-- Eine Schraube (Maße: Durchmesser 5mm, Kopfdurchmesser max. 9mm, Länge 15-25mm), einschließlich passender Muttern (Für Sensor-Case unten)
-- Eine Schrauben (Maße: Durchmesser 4mm, Kopfhöhe max. 4.5mm, Länge 15-25mm), einschließlich passender Muttern
+- Eine Schraube (Maße: Durchmesser 5mm, Kopfdurchmesser max. 9mm, Länge 15-25mm), einschließlich passender Mutter (Für Sensor-Case unten)
+- Eine Schrauben (Maße: Durchmesser 4mm, Kopfhöhe max. 4.5mm, Länge 15-25mm), einschließlich passender Muttern (Für Sensor-Case Innen)
 - 8 kleine Nägel
 - Holzstab Durchmesser 10mm, Länge 105mm
 
@@ -58,7 +58,7 @@ Bird Booth soll ein langlebiges und umweltfreundliches Vogelhäuschen sein.
     <br>
 {{< /rawhtml >}}
 ### Dateien-Bibliothek
-#### Server
+#### Code
 - [Server Code ](https://github.com/AnnaMarburger/smartesfutterhaus)
 - [ESP Code ](https://github.com/AnnaMarburger/swh/blob/main/birdbooth_files/esp_code.ino)
 
@@ -88,7 +88,13 @@ Um den Server zu realisieren verwende ich die Laufzeitumgebung [Node Js](https:/
 
 Nun legen wir ein Verzeichnis an, in welchem wir unsere Anwendung aufbauen. Mit `npm init` wird eine neue package.json Datei erstellt. In dieser können wir unter anderem den Namen unserer Anwendung festlegen, sowie unter “main” den Namen unsere Hauptdatei, die für das Starten des Servers verantwortlich ist. Bevor wir genau diese Datei anlegen, in meinem Fall “app.js”, fügen wir der package.json Datei ein weiteres Attribut hinzu: `“type”:module`. 
 
-Um das Coden einfacher zu  gestalten, verwende ich das Framework  [Express Js](https://expressjs.com)  . Dieses lässt sich mit dem Package Manager npm durch `npm install express` installieren. Dabei ist wichtig, dass wir uns im Verzeichnis unserer Anwendung befinden. Mit `node app.js` kann der Server lokal getestet werden. Hierzu ist zudem das Programm [Postman](https://www.postman.com) hilfreich, das über eine einfache Benutzeroberfläche Server Requests verschicken lässt (Achtung: Für Anfragen an lokale Server wird hierbei die Desktop App benötigt).
+Um das Coden einfacher zu  gestalten, verwende ich das Framework  [Express Js](https://expressjs.com)  . Dieses lässt sich mit dem Package Manager npm durch `npm install express` installieren. Dabei ist wichtig, dass wir uns im Verzeichnis unserer Anwendung befinden. Mit `node app.js` kann der Server lokal getestet werden. Hierzu ist zudem das Programm [Postman](https://www.postman.com) hilfreich, das über eine einfache Benutzeroberfläche Server Requests verschicken lässt 
+
+  {{< figure src="../media/projekt/postman_request.png" caption="Screenshot POST-request in Postman">}}
+
+(Achtung: Für Anfragen an lokale Server wird hierbei die Desktop App benötigt).
+
+
 
 #### 1.2 Datenspeicherung mit Firebase
 
@@ -108,7 +114,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 ```
 
-Wichtig hier ist die Firebase Configuration für unsere Anwendung, da diese für jedes angelegte Firebase Projekt individuell ist. Dieser Teil muss also kopiert und in unserer Hauptdatei “app.js” entsprechend ersetzt werden. Nun müssen wir in der Firebase Konsole nur noch unseren Speicher einrichten. Unter “Entwickeln” im Seitenmenü wählen wir “Storage” aus und drücken auf der Seite auf “Jetzt Starten”.  Die Sicherheitsregeln setzen wir (zum Entwickeln) auf öffentlich. In diesem Speicherbucket können wir nun einen Ordner “images” erstellen. Hier lädt unser Server alle einkommenden Bilder hoch. Außerdem muss die Datei “data.json” in diesem Storage von Hand erstmals hochgeladen werden, da der Server versucht, diese herunterzuladen, sobald er eine “GET” Request von einem Clienten erhält. Beim allerersten Serverstart würde dieser dementsprechend einen Fehler werfen, wenn er dort keine “data.json” Datei findet.
+Wichtig hier ist die Firebase Configuration für unsere Anwendung, da diese für jedes angelegte Firebase Projekt individuell ist. Dieser Teil muss also kopiert und in unserer Hauptdatei *app.js* entsprechend ersetzt werden. Nun müssen wir in der Firebase Konsole nur noch unseren Speicher einrichten. Unter “Entwickeln” im Seitenmenü wählen wir “Storage” aus und drücken auf der Seite auf “Jetzt Starten”.  Die Sicherheitsregeln setzen wir (zum Entwickeln) auf öffentlich. In diesem Speicherbucket können wir nun einen Ordner “images” erstellen. Hier lädt unser Server alle einkommenden Bilder hoch. 
+
+  {{< figure src="../media/projekt/screen_firebase.png" caption="Screenshot des Firebase-Storage">}}
+
+Außerdem muss die Datei *data.json* in diesem Storage von Hand erstmals hochgeladen werden, da der Server versucht, diese herunterzuladen, sobald er eine “GET” Request von einem Clienten erhält. Beim allerersten Serverstart würde dieser dementsprechend einen Fehler werfen, wenn er dort keine *data.json* Datei findet.
 
 #### 1.3 Hosting
 
@@ -121,15 +131,19 @@ Der gesamte Code für den Server ist auf folgendem Repo zu finden:
 
 https://github.com/AnnaMarburger/smartesfutterhaus
 
-1. Die **app.js** Datei, auch die Hauptdatei, die für das eigentliche erstellen eines Servers verantwortlich ist. In dieser Datei werden “POST”, “GET” und “DELETE” Anfragen gehändelt. Einkommende POST Anfragen werden auf Richtigkeit geprüft und anschließend bearbeitet. Bilder werden direkt mit einem eindeutigen Namen (durch Datum+Uhrzeit) im Firebase Storage gesichert. Bei jeder GET Anfrage bringt der Server sich selbst auf den neuesten Stand, in dem er alle Bilder, sowie die “Data.json” herunterlädt und erst anschließend dem Client mit der index.html Datei antwortet.
-2. Die **index.html** Datei ist die Datei, welche an Clienten bei GET Requests geschickt wird. In ihr werden die Buttons zum Filtern und Sortieren definiert. Außerdem sind in ihr die Dateien “gallery.js” und “style.css” verlinkt.
+1. Die *app.js* Datei, auch die Hauptdatei, die für das eigentliche Erstellen des Servers verantwortlich ist. In dieser Datei werden “POST”, “GET” und “DELETE” Anfragen gehändelt. Einkommende POST Anfragen werden auf Richtigkeit geprüft und anschließend bearbeitet. Bilder werden direkt mit einem eindeutigen Namen (durch Datum+Uhrzeit) im Firebase Storage gesichert. 
 
-Im **Public Ordner**, welchen wir als solchen in “app.js” deklarieren (dies ist wichtig, um Clienten den Zugriff auf benötigte Dateien wie zB stylesheets möglich zu machen, die wir nicht per se mitschicken):
-3. **gallery.js** ist die JavaScript Datei, die sich um das dynamische Anzeigen der Daten auf der Website kümmert. Sie liest aus der “data.json” jeweils Bildname, zugehöriges Gewicht und Datum aus und zeigt diese Daten für jeden Eintrag als Galerie-Item auf der Website an. Des Weiteren händelt sie die Filter- und Sortierungs-Optionen, die durch die Buttons auf der Seite getriggert werden. 
-4. In der Datei ********************style.css******************** wird das Aussehen der Website entsprechend festgelegt.
-5. Die bereits erwähnte ********************data.json******************** Datei verwaltet die Metadaten zu jedem Bild, das den Server erreicht. Dazu gehören Name der Bilddatei, sodass sie in den Files gefunden werden kann, Das gemessene Gewicht des zugehörigen Vogels sowie einen Datumsstempel, der beim Empfangen des Bildes hinzugefügt wurde.
+2. Die *index.html* Datei ist die Datei, welche an Clienten bei GET Requests geschickt wird. In ihr werden die Buttons zum Filtern und Sortieren definiert. Außerdem sind in ihr die Dateien *gallery.js* und *style.css* verlinkt.
 
-Der **Uploads Ordner** enthält die Bilddateien zum Anzeigen nach Herunterladen aus dem Firebase Speicher.
+Im *Public Ordner*, welchen wir als solchen in *app.js* deklarieren (dies ist wichtig, um Clienten den Zugriff auf benötigte Dateien wie z.B. stylesheets möglich zu machen, die wir nicht per se mitschicken):
+
+3. *gallery.js* ist die JavaScript Datei, die sich um das dynamische Anzeigen der Daten auf der Website kümmert. Sie liest aus der “data.json” jeweils Bildname, zugehöriges Gewicht und Datum aus und zeigt diese Daten für jeden Eintrag als Galerie-Item auf der Website an. Des Weiteren händelt sie die Filter- und Sortierungs-Optionen, die durch die Buttons auf der Seite getriggert werden. 
+
+4. In der Datei *style.css* wird das Aussehen der Website entsprechend festgelegt.
+
+5. Die bereits erwähnte *data.json* Datei verwaltet die Metadaten zu jedem Bild, das den Server erreicht. Dazu gehören Name der Bilddatei, sodass sie in den Files gefunden werden kann, das gemessene Gewicht des zugehörigen Vogels sowie einen Datumsstempel, der beim Empfangen des Bildes hinzugefügt wurde.
+
+Der *Uploads Ordner* enthält die Bilddateien zum Anzeigen nach Herunterladen aus dem Firebase Speicher.
 
 {{< rawhtml >}} 
     <br>
@@ -144,7 +158,7 @@ Da die ESP32-Cam keinen USB-Anschluss mitbringt, benötigen wir, um sie zu progr
 
   {{< figure src="../media/projekt/steckplatine.jpeg" width="60%"  caption="ESP+FTDI auf Steckplatine">}}
 
-Dabei sollten wir darauf achten, dass auf dem Adapter die Bridge zu 5V gesetzt ist. Zwar läuft der Esp laut Dokumentation auch mit 3.3V, jedoch wurden hierbei zahlreiche Probleme in Online Foren reported. Zusätzlich müssen wir die ESP32-Cam, um Code hochladen zu können, in den “Flashing Mode” setzen. Dies machen wir, indem wir die PINS IO0 und GND verbinden. Der Schaltplan sieht demnach folgendermaßen aus:
+Dabei sollten wir darauf achten, dass auf dem Adapter die Bridge zu 5V gesetzt ist. Zwar läuft der Esp laut Dokumentation auch mit 3.3V, jedoch wurden hierbei zahlreiche Probleme in Online Foren reported. Zusätzlich müssen wir die ESP32-Cam, um Code hochladen zu können, in den “Flashing Mode” setzen. Dies machen wir, indem wir die Pins GPIO0 und GND verbinden. Der Schaltplan sieht demnach folgendermaßen aus:
 
   {{< figure src="../media/projekt/schaltplan_esp.jpeg" caption="Schaltplan ESP+FTDI">}}
 
@@ -373,6 +387,9 @@ void sendPhoto() {
 ```
 
 Achtung: Um den Code zu testen, muss "weight" durch eine beliebige Zahl ersetzt werden. Diese Variable haben wir bisher noch nicht definiert. Dies werden wir in Abschnitt 4 tun, wenn es um den Gewichtssensor geht.
+Um beim Testen das Output des Programms sehen zu können, öffnen wir unter Tools > Serial Monitor den Serial Monitor und beachten dabei, dass er auf die richtige BAUD Rate (hier 115200) eingestellt ist.
+
+**Troubleshooting**: Beim Hochladen von Code auf den ESP kommt es gerne mal zu Problemen, oftmals liegt es an manelhafter Stromversorgung. Hier hilft Google weiter. Eine für mich hilfreiche Seite war: [espressif docs](https://docs.espressif.com/projects/arduino-esp32/en/latest/troubleshooting.html).
 
 {{< rawhtml >}} 
     <br>
@@ -431,6 +448,8 @@ Damit der ESP in den light sleep geschickt werden kann, während keine Vögel zu
 Um mit den Daten des Gewichtssensors etwas anfangen zu können, brauchen wir ein Amplifier Modul (HX711). Der Schaltplan für diese beiden Komponenten sieht folgendermaßen aus:
 
 {{< figure src="../media/projekt/schaltplan_loadcell.png" caption="Schaltplan Gewichtssensor">}}
+
+Hierbei entsprechen die Farben der Kabel des Sensors auf dem Bild den Farben in echt und sollten dementsprechend verlötet werden. Um sicherzugehen ist es aber ratsam, in die Dokumentation der eigenen Teile zu schauen, falls Abweichungen auftreten. 
 
 Das Schaubild zeigt außerdem, wie wir den Gewichtssensor montieren. Dazu brauchen wir folgende Bauteile:
 
