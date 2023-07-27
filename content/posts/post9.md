@@ -69,6 +69,9 @@ Bird Booth soll ein langlebiges und umweltfreundliches Vogelhäuschen sein.
 - [Futterschale Unterteil](https://github.com/AnnaMarburger/swh/blob/main/birdbooth_files/futterschale_unten.stl)
 - [Kamera-Case](https://github.com/AnnaMarburger/swh/blob/main/birdbooth_files/cam-case.stl)
 
+#### Lötplan
+- [schaltplan.png ](https://github.com/AnnaMarburger/swh/blob/main/birdbooth_files/schaltplan.png)
+
 
 {{< rawhtml >}} 
     <br>

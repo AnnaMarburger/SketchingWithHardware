@@ -25,7 +25,7 @@ Rückblickend auf die Präsentation zu Beginn des Semesters stelle ich fest, das
 
 Das Semester endete mit einer Abschlusspräsentation aller Projekte. Interessant waren die doch teilweise sehr unterschiedlichen Verwirklichungen bei gleichen Rahmenbedingungen anzusehen. Um unsere Projekte vorzustellen, entwarf jeder zusätzlich ein Plakat. Diese wurden ausgedruckt und jeweils zu den Projekten aufgehangen.
 
-{{< figure src="../media/Poster_AnnaMarburger.pdf" >}}
+{{< figure src="../media/Poster_QBoy.png" >}}
 
 Es machte Spaß, zum einen bei den anderen Projekten vorbeizuschauen und zu sehen, was alles umgesetzt wurde, aber auch zum anderen, das eigene Projekt vorzustellen und die Ideen und den Prozess dahinter zu erklären, da alle Besucher wirklich interessiert waren.
 

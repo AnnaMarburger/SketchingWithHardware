@@ -59,7 +59,7 @@ Für zukünftige Kurse würde ich mir neue 3D-Drucker wünschen, um die Arbeit z
     <br>
 {{< /rawhtml >}}
 ## Das Projekt: Bird Booth
-{{< figure src="../media/projekt/Poster_AnnaMarburger.pdf" caption="Poster für das Streiflicht 2023 ">}}
+{{< figure src="../media/projekt/Poster_AnnaMarburger.png" caption="Poster für das Streiflicht 2023 ">}}
 
 
 Bird Booth sollte ein smartes Futterhäuschen werden mit der Funktion, Bilder zu machen, wenn ein Vogel an die Futterstelle kommt und diesen zu wiegen, um anschließend die Daten an einen Webserver zu senden. Das Futterhäuschen sollte sicher für Vögel, wetterbeständig und robust werden.
