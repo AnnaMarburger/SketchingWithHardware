@@ -1,4 +1,4 @@
-module annamarburger.github.io/swh
+module annamarburger.github.io/SketchingWithHardware
 
 go 1.20
 
